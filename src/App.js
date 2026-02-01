@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Particles from './Particles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="hero">
+        <Particles
+            particleColors={["#ffffff"]}
+            particleCount={400}
+            particleSpread={30}
+            speed={0.1}
+            particleBaseSize={80}
+            moveParticlesOnHover
+            alphaParticles={false}
+            disableRotation={true}
+            pixelRatio={1}
+        />
+        <div className="heroText">
+            <h1>sdfsdfdsfs</h1>
+        </div>
     </div>
   );
 }
