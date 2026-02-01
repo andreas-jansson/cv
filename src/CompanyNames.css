@@ -1,0 +1,14 @@
+.scrollingNamesWrapper{
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border: 2px red solid;
+    pointer-events: none;
+}
+
+.companyName{
+    align-items: center;
+    display: flex;
+    width: 200px;
+}
