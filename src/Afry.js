@@ -3,11 +3,10 @@
 const Afry = () => (
     <div className="companyName">
 
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 100 100"
-             preserveAspectRatio="xMidYMid meet">
-
-            <g transform="translate(0.000000,1486.000000) scale(0.100000,-0.100000)"
+        <svg
+            viewBox="0 0 6400 1500"
+        >
+            <g transform="translate(0,1486) scale(0.1,-0.1)"
                fill="#000000" stroke="none">
                 <path d="M7135 14854 c-1771 -80 -3375 -735 -4690 -1915 -161 -144 -465 -453
                     -609 -618 -970 -1110 -1584 -2470 -1776 -3931 -70 -533 -79 -1166 -24 -1705

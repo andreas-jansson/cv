@@ -39,6 +39,7 @@ function App() {
         <div className="hero">
             <div className="heroTextWrapper">
                 <div className="heroTextWrapper2">
+                    <div className="heroTextWrapper3">
                     <h1>ANDRÉAS JANSSON</h1>
                     <div className="scrollTextBoxWrapper">
                         <div className="scrollTextBox">
@@ -57,6 +58,7 @@ function App() {
                 </div>
                 </div>
                 <TechStack/>
+                </div>
             </div>
         </div>
             </div>
@@ -65,7 +67,7 @@ function App() {
                 logos={techLogos}
                 speed={40}
                 direction="left"
-                logoHeight={50}
+                logoHeight={80}
                 gap={150}
                 hoverSpeed={50}
                 scaleOnHover={false}
