@@ -59,7 +59,7 @@ h2 span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;   /* <-- not absolute */
+  position: absolute;
   overflow-x: clip;     /* extra safety */
 }
 
