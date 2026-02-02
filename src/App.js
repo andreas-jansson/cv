@@ -16,9 +16,18 @@ import TrackElementWithinViewport from './TrackItem'
 import MagicBento from './MagicBento'
 import { ReactComponent as GithubSvg } from './svg/Github.svg';
 import { ReactComponent as LinkedInSvg } from './svg/LinkedIn.svg';
+import { ReactComponent as EmailSvg } from './svg/email.svg';
 import AssignmentEricsson from './assignmentDesc/EricssonDesc'
 import AssignmentSaab from './assignmentDesc/SaabDesc'
+import AssignmentOwnit from './assignmentDesc/OwnitDesc'
+import EmailCopyButton from './EmailCopyButton'
+import Nav from './navbar'
 
+const items = [
+    { label: "LinkedIn", logo:<LinkedInSvg/>, href: "https://www.linkedin.com/in/andreas-jansson-1b14b6163/" },
+    { label: "Github", logo:<GithubSvg/>, href: "https://github.com/andreas-jansson" },
+    { label: "Copy email", type: "button", copyText: "andreas@example.com" },
+];
 
 const techLogos = [
     { node: <Saab />, title: "Saab"},
@@ -47,6 +56,19 @@ const techLogos = [
                 disableRotation={true}
                 pixelRatio={1}
             />
+
+            <div className="navContainer">
+                    <a href="https://www.linkedin.com/in/andreas-jansson-1b14b6163/" rel="noopener noreferrer" target="_blank">
+                        <LinkedInSvg/>
+                    </a>
+                <a href="https://github.com/andreas-jansson" rel="noopener noreferrer" target="_blank">
+                        <GithubSvg/>
+                    </a>
+                <EmailCopyButton email="andreas.jansson@protonmail.com">
+                    <EmailSvg />
+                </EmailCopyButton>
+            </div>
+
             <div className="contentContainer">
         <div className="hero">
             <div className="heroTextWrapper">
@@ -74,7 +96,6 @@ const techLogos = [
             </div>
         </div>
             </div>
-
             <LogoLoop
                 logos={techLogos}
                 speed={40}
@@ -115,7 +136,8 @@ const techLogos = [
                 companyName="Ownit"
                 date="2013–2019"
                 title="Network Technician and Enterprise Support"
-                roleDesc={["Yocto/Embedded Linux", "Driver bring-up", "CI builds"]}
+                roleDesc={AssignmentOwnit.desc}
+                skills={AssignmentOwnit.skill}
                 accent="#03bfb5"
             />
 

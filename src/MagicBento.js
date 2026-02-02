@@ -1,6 +1,11 @@
 import { useRef, useEffect, useCallback, useState } from 'react';
 import { gsap } from 'gsap';
 import './MagicBento.css';
+import DroneImg from './img/drone.webp'
+import SkateImg from './img/App.jpg'
+import SpeakerImg from './img/speaker.jpg'
+import CameraImg from './img/camera.jpg'
+import OmradesKollenImg from './img/map.webp'
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
@@ -11,38 +16,43 @@ const cardData = [
     {
         color: '#060010',
         title: 'Analytics',
-        description: 'Track user behavior',
-        label: 'Insights'
+        description: 'Based on ESP32',
+        label: 'Bluetooth Speaker',
+        img: SpeakerImg,
     },
     {
         color: '#060010',
         title: 'Dashboard',
-        description: 'Centralized data view',
-        label: 'Overview'
+        description: 'Built using Yocto with and RP4 using V4L2, communicating via CAN bus',
+        label: 'Car Reverse Camera',
+        img: CameraImg,
     },
     {
         color: '#060010',
-        title: 'Collaboration',
-        description: 'Work together seamlessly',
-        label: 'FPV Drone'
+        title: 'Performance',
+        description: 'Flightcontroller based on ESP32',
+        label: 'FPV Drone',
+        img: DroneImg,
     },
     {
         color: '#060010',
-        title: 'Automation',
-        description: 'Streamline workflows',
-        label: 'Efficiency'
+        title: 'Controller and Reciever',
+        description: 'Sideproject while I was studying, 40+ km/h',
+        label: 'Electric Skateboard',
+        img: SkateImg,
     },
     {
         color: '#060010',
         title: 'Integration',
-        description: 'Connect favorite tools',
-        label: 'Connectivity'
+        description: 'An interactive map with data from SCB visualizing and comparing neighbourhoods',
+        label: 'Områdeskollen.nu',
+        img: OmradesKollenImg,
     },
     {
         color: '#060010',
         title: 'Security',
         description: 'Enterprise-grade protection',
-        label: 'Protection'
+        label: 'Protection',
     }
 ];
 
@@ -506,7 +516,13 @@ const MagicBento = ({
                         className: baseClassName,
                         style: {
                             backgroundColor: card.color,
-                            '--glow-color': glowColor
+                            backgroundImage: card.img
+                                ? `linear-gradient(rgba(6,0,16,0.65), rgba(6,0,16,0.65)), url(${card.img})`
+                                : undefined,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            '--glow-color': glowColor,
                         }
                     };
 
@@ -521,6 +537,7 @@ const MagicBento = ({
                                 enableTilt={enableTilt}
                                 clickEffect={clickEffect}
                                 enableMagnetism={enableMagnetism}
+
                             >
                                 <div className="magic-bento-card__header">
                                     <div className="magic-bento-card__label">{card.label}</div>

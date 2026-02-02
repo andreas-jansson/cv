@@ -1,0 +1,8 @@
+
+
+.navContainer{
+    position: fixed;
+    border:2px yellow solid;
+    width: 200px;
+    height:50px;
+}
