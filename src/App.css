@@ -59,21 +59,30 @@ h2 span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;   /* <-- not absolute */
+  overflow-x: clip;     /* extra safety */
 }
 
 .contentContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width:50%;
-  height: auto;
-  min-width: 300px;
+
+  width: min(900px, 50%);        /* desktop */
+  max-width: calc(100% - 24px);  /* never exceed viewport */
+  min-width: 0;                  /* IMPORTANT: allow shrink */
+  overflow-x: clip;              /* or hidden */
+}
+
+@media (max-width: 768px){
+  .contentContainer{
+    width: calc(100% - 24px);    /* full width on mobile */
+  }
 }
 
 .particles-container {
   z-index: 0;
-  top:0;
+  top: 0;
   position: fixed;
   width: 100%;
   height: 100vh;
