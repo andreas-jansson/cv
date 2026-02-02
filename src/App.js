@@ -14,6 +14,10 @@ import AssignmentCard from './AssignmentCard'
 import './AssignmentCard.css'
 import TrackElementWithinViewport from './TrackItem'
 import MagicBento from './MagicBento'
+import { ReactComponent as GithubSvg } from './svg/Github.svg';
+import { ReactComponent as LinkedInSvg } from './svg/LinkedIn.svg';
+import AssignmentEricsson from './assignmentDesc/EricssonDesc'
+import AssignmentSaab from './assignmentDesc/SaabDesc'
 
 
 const techLogos = [
@@ -25,10 +29,10 @@ const techLogos = [
 ];
 
 
-const assignmentEricsson = " \n" +
-    "Arbetade med utveckling och förbättring av Hardware testmanager, ett internt testverktyg för basstationsradio. Testmanager används för att verifiera högprestanda-gränssnitt som PCIe och CIPRI, samt interna och externa sensorer och övriga hårdvarugränssnitt. Systemet är utvecklat i C och C++ och körs på en Yocto-baserad Linuxmiljö, vilket kräver anpassning och konfiguration för målplattformen. Bidrog bland annat med att utveckla mjukvara för att identifiera och verifiera hårdvarufel i SoC:er, vilket förbättrade felanalys och förkortade felsökningstiden i produktions- och utvecklingsmiljö. Arbetet innefattade både lågnivå-programmering, felsökning nära hårdvara samt konfiguration av byggmiljö och Yocto-image.";
 
-function App() {
+
+
+    function App() {
     return (
         <div className="mainWrapper">
             <SplashCursor />
@@ -84,48 +88,67 @@ function App() {
                 ariaLabel="Technology partners"
             />
 
+            <div className="headerTextWrapper">
+                <h2>My <span>Professional</span> Experience</h2>
+            </div>
+
             <div className="contentContainer">
             <AssignmentCard
-                companyName="AFRY"
+                companyName="Ericsson"
                 date="2024–2026"
-                title="Embedded / Software Engineer"
-                items={[assignmentEricsson, "PCIE"]}
-                logo={<Afry />}
+                title="Embedded Software Engineer"
+                roleDesc={AssignmentEricsson.desc}
+                skills={AssignmentEricsson.skill}
                 accent="#03bfb5"
             />
             <div  className="AssignmentCardSpacer"/>
             <AssignmentCard
                 companyName="Saab"
                 date="2022–2022"
-                title="Embedded / Software Engineer"
-                items={["Yocto/Embedded Linux", "Driver bring-up", "CI builds"]}
-                logo={<Saab />}
+                title="Embedded Software Engineer"
+                roleDesc={AssignmentSaab.desc}
+                skills={AssignmentSaab.skill}
                 accent="#03bfb5"
             />
             <div  className="AssignmentCardSpacer"/>
             <AssignmentCard
                 companyName="Ownit"
-                date="2024–2026"
+                date="2013–2019"
                 title="Network Technician and Enterprise Support"
-                items={["Yocto/Embedded Linux", "Driver bring-up", "CI builds"]}
-                logo={<Ownit />}
+                roleDesc={["Yocto/Embedded Linux", "Driver bring-up", "CI builds"]}
                 accent="#03bfb5"
             />
 
-                <MagicBento
-                    textAutoHide={true}
-                    enableStars
-                    enableSpotlight
-                    enableBorderGlow={true}
-                    enableTilt={false}
-                    enableMagnetism={false}
-                    clickEffect
-                    spotlightRadius={400}
-                    particleCount={12}
-                    glowColor="#03bfb5"
-                    disableAnimations={false}
-                />
+            <div className="headerTextWrapper">
+                <h2>Personal <span>Pro</span>jects</h2>
+            </div>
 
+            <MagicBento
+                textAutoHide={true}
+                enableStars
+                enableSpotlight
+                enableBorderGlow={true}
+                enableTilt={false}
+                enableMagnetism={false}
+                clickEffect
+                spotlightRadius={400}
+                particleCount={12}
+                glowColor="#03bfb5"
+                disableAnimations={false}
+            />
+
+            </div>
+            <div className="footer">
+                <div className="footerName">
+                    <p>Created by Andréas Jansson</p>
+                </div>
+                <div className="footerLinks">
+                    <div className="footerLinksWrapper">
+'                       <span><GithubSvg/></span> Github
+                        <span/>
+                        <span><LinkedInSvg/></span> LinkedIn
+                    </div>
+                </div>
             </div>
         </div>
     );

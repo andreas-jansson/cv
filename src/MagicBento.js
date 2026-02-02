@@ -24,7 +24,7 @@ const cardData = [
         color: '#060010',
         title: 'Collaboration',
         description: 'Work together seamlessly',
-        label: 'Teamwork'
+        label: 'FPV Drone'
     },
     {
         color: '#060010',

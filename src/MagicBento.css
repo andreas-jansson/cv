@@ -46,6 +46,11 @@
     --glow-y: 50%;
     --glow-intensity: 0;
     --glow-radius: 200px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .magic-bento-card:hover {

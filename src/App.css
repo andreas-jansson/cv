@@ -1,3 +1,9 @@
+
+:root{
+  --primary-bg-color: #000000;
+  --primary-item-bg-color: #171717;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +15,45 @@ html, body {
   width: 100%;
   height:auto;
   overflow-y: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-style: normal;
 }
 
 h1{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: xxx-large;
+  font-size: 4rem;
   color: #ececec;
+  align-self: center;
+  vertical-align: center;
+  text-align: center;
+
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+h2 span{
+  background: -webkit-linear-gradient(#53c9c3, #03a198);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headerTextWrapper{
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .mainWrapper{
-  background-color: #151515;
+  background-color: var(--primary-bg-color);
   width:100%;
   height: auto;
   display: flex;
@@ -97,7 +130,9 @@ h1{
 }
 
 .scrollTextBox span{
-  color:#03bfb5;
+  background: -webkit-linear-gradient(#53c9c3, #03a198);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .techStackWrapper{
@@ -117,7 +152,7 @@ h1{
 }
 
 .techIcon{
-  margin:5px;
+  margin:10px;
   z-index: 999;
   width:30px;
   height: 30px;
@@ -132,4 +167,44 @@ h1{
   transform: scale(1.25);
 }
 
+.footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+}
 
+.footerName{
+  margin-left:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width:auto;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footerLinks{
+  margin-right:5%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerLinksWrapper{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+}
+.footerLinksWrapper span{
+  width:20px;
+  height:20px;
+  opacity: 80%;
+  text-align: end;
+}
