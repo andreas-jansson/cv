@@ -181,3 +181,7 @@
         transition: none !important;
     }
 }
+
+.logoloop__item {
+    list-style: none; /* extra safety */
+}

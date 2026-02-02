@@ -10,6 +10,10 @@ import Ericsson from './Ericsson'
 import Ownit from './Ownit'
 import Nexer from './Nexer'
 import Afry from './Afry'
+import AssignmentCard from './AssignmentCard'
+import './AssignmentCard.css'
+import TrackElementWithinViewport from './TrackItem'
+import MagicBento from './MagicBento'
 
 
 const techLogos = [
@@ -20,12 +24,16 @@ const techLogos = [
     { node: <Afry />, title: "Afry"},
 ];
 
+
+const assignmentEricsson = " \n" +
+    "Arbetade med utveckling och förbättring av Hardware testmanager, ett internt testverktyg för basstationsradio. Testmanager används för att verifiera högprestanda-gränssnitt som PCIe och CIPRI, samt interna och externa sensorer och övriga hårdvarugränssnitt. Systemet är utvecklat i C och C++ och körs på en Yocto-baserad Linuxmiljö, vilket kräver anpassning och konfiguration för målplattformen. Bidrog bland annat med att utveckla mjukvara för att identifiera och verifiera hårdvarufel i SoC:er, vilket förbättrade felanalys och förkortade felsökningstiden i produktions- och utvecklingsmiljö. Arbetet innefattade både lågnivå-programmering, felsökning nära hårdvara samt konfiguration av byggmiljö och Yocto-image.";
+
 function App() {
     return (
         <div className="mainWrapper">
             <SplashCursor />
             <Particles
-                particleColors={["#d9d6ee"]}
+                particleColors={["#ffffff"]}
                 particleCount={600}
                 particleSpread={10}
                 speed={0.1}
@@ -68,7 +76,7 @@ function App() {
                 speed={40}
                 direction="left"
                 logoHeight={80}
-                gap={150}
+                gap={100}
                 hoverSpeed={50}
                 scaleOnHover={false}
                 fadeOut
@@ -76,12 +84,48 @@ function App() {
                 ariaLabel="Technology partners"
             />
 
-
             <div className="contentContainer">
+            <AssignmentCard
+                companyName="AFRY"
+                date="2024–2026"
+                title="Embedded / Software Engineer"
+                items={[assignmentEricsson, "PCIE"]}
+                logo={<Afry />}
+                accent="#03bfb5"
+            />
+            <div  className="AssignmentCardSpacer"/>
+            <AssignmentCard
+                companyName="Saab"
+                date="2022–2022"
+                title="Embedded / Software Engineer"
+                items={["Yocto/Embedded Linux", "Driver bring-up", "CI builds"]}
+                logo={<Saab />}
+                accent="#03bfb5"
+            />
+            <div  className="AssignmentCardSpacer"/>
+            <AssignmentCard
+                companyName="Ownit"
+                date="2024–2026"
+                title="Network Technician and Enterprise Support"
+                items={["Yocto/Embedded Linux", "Driver bring-up", "CI builds"]}
+                logo={<Ownit />}
+                accent="#03bfb5"
+            />
 
-                <div className="assignmentWrapper">
-                    <p>Hello</p>
-                </div>
+                <MagicBento
+                    textAutoHide={true}
+                    enableStars
+                    enableSpotlight
+                    enableBorderGlow={true}
+                    enableTilt={false}
+                    enableMagnetism={false}
+                    clickEffect
+                    spotlightRadius={400}
+                    particleCount={12}
+                    glowColor="#03bfb5"
+                    disableAnimations={false}
+                />
+
             </div>
         </div>
     );
