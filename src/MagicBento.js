@@ -15,16 +15,16 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
     {
         color: '#060010',
-        title: 'Analytics',
+        title: 'Turn up the Bass',
         description: 'Based on ESP32',
         label: 'Bluetooth Speaker',
         img: SpeakerImg,
     },
     {
         color: '#060010',
-        title: 'Dashboard',
+        title: 'Quality of Life',
         description: 'Built using Yocto with and RP4 using V4L2, communicating via CAN bus',
-        label: 'Car Reverse Camera',
+        label: 'Car Parking Camera',
         img: CameraImg,
     },
     {
@@ -43,16 +43,16 @@ const cardData = [
     },
     {
         color: '#060010',
-        title: 'Integration',
+        title: 'Helpful Tool',
         description: 'An interactive map with data from SCB visualizing and comparing neighbourhoods',
         label: 'Områdeskollen.nu',
         img: OmradesKollenImg,
     },
     {
         color: '#060010',
-        title: 'Security',
-        description: 'Enterprise-grade protection',
-        label: 'Protection',
+        title: 'TBD',
+        description: '',
+        label: 'Suggestions?',
     }
 ];
 
