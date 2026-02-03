@@ -27,5 +27,5 @@
 }
 .assignmentCardTitle{
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem); /* min, fluid, max */
 }

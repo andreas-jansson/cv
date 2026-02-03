@@ -35,7 +35,7 @@ h2{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: clamp(1.3rem, 3vw, 3rem); /* min, fluid, max */
+  font-size: clamp(1.5rem, 3vw, 3rem); /* min, fluid, max */
 }
 
 h2 span{
