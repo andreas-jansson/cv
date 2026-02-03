@@ -116,6 +116,7 @@ const techLogos = [
             <div className="contentContainer">
             <AssignmentCard
                 companyName="Ericsson"
+                consulting="Afry"
                 date="2024–2026"
                 title="Embedded Software Engineer"
                 roleDesc={AssignmentEricsson.desc}
@@ -125,6 +126,7 @@ const techLogos = [
             <div  className="AssignmentCardSpacer"/>
             <AssignmentCard
                 companyName="Saab"
+                consulting="Nexer/Saab"
                 date="2022–2022"
                 title="Embedded Software Engineer"
                 roleDesc={AssignmentSaab.desc}

@@ -5,6 +5,7 @@ const AssignmentCard = ({
                             companyName = "Company",
                             date = "YYYY–YYYY",
                             title = "Role / Assignment",
+                            consulting = "",
                             roleDesc = [],
                             skills = [],
                             href = null,
@@ -117,7 +118,16 @@ const AssignmentCard = ({
                                     flexWrap: "wrap",
                                 }}
                             >
-                                <h3 className="assignmentCardCompany">{companyName}</h3>
+                                <h3 className="assignmentCardCompany">
+                                    {companyName}
+                                    <div className="assignmentCardVia">
+                                        {consulting && (
+                                            <>
+                                                <span>via {consulting}</span>
+                                            </>
+                                        )}
+                                    </div>
+                                </h3>
                                 <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>{date}</span>
                             </div>
                             <div className="assignmentCardTitle">{title}</div>
