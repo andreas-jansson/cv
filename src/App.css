@@ -212,7 +212,7 @@ h2 span{
   align-items: center;
 
 }
-.footerLinksWrapper span{
+.footerLinksWrapper a{
   width:20px;
   height:20px;
   opacity: 80%;

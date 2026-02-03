@@ -166,9 +166,9 @@ const techLogos = [
                 </div>
                 <div className="footerLinks">
                     <div className="footerLinksWrapper">
-'                       <span><GithubSvg/></span> Github
-                        <span/>
-                        <span><LinkedInSvg/></span> LinkedIn
+'                       <a href="https://github.com/andreas-jansson" rel="noopener noreferrer" target="_blank"><GithubSvg/></a>
+                        <a/>
+                        <a href="https://www.linkedin.com/in/andreas-jansson-1b14b6163/" rel="noopener noreferrer" target="_blank"><LinkedInSvg/></a>
                     </div>
                 </div>
             </div>
