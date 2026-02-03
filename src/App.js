@@ -127,7 +127,7 @@ const techLogos = [
             <AssignmentCard
                 companyName="Saab"
                 consulting="Nexer/Saab"
-                date="2022–2022"
+                date="2022–2024"
                 title="Embedded Software Engineer"
                 roleDesc={AssignmentSaab.desc}
                 skills={AssignmentSaab.skill}
