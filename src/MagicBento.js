@@ -44,15 +44,15 @@ const cardData = [
     {
         color: '#060010',
         title: 'Helpful Tool',
-        description: 'An interactive map with data from SCB visualizing and comparing neighbourhoods',
+        description: 'An interactive map with data from SCB visualizing and comparing neighbourhoods. Release date TBD.',
         label: 'Områdeskollen.nu',
         img: OmradesKollenImg,
     },
     {
         color: '#060010',
-        title: 'TBD',
-        description: '',
-        label: 'Suggestions?',
+        title: '',
+        description: 'about all projects coming soon',
+        label: 'More information..',
     }
 ];
 

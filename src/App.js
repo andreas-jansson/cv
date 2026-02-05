@@ -22,6 +22,7 @@ import AssignmentSaab from './assignmentDesc/SaabDesc'
 import AssignmentOwnit from './assignmentDesc/OwnitDesc'
 import EmailCopyButton from './EmailCopyButton'
 import Nav from './navbar'
+import BlurText from "./BlurText";
 
 const items = [
     { label: "LinkedIn", logo:<LinkedInSvg/>, href: "https://www.linkedin.com/in/andreas-jansson-1b14b6163/" },
@@ -74,7 +75,13 @@ const techLogos = [
             <div className="heroTextWrapper">
                 <div className="heroTextWrapper2">
                     <div className="heroTextWrapper3">
-                    <h1>ANDRÉAS JANSSON</h1>
+                        <BlurText
+                            text="ANDRÉAS JANSSON"
+                            delay={200}
+                            animateBy="words"
+                            direction="top"
+                            className="blurTextH1Name"
+                        />
                     <div className="scrollTextBoxWrapper">
                         <div className="scrollTextBox">
                             <RotatingText
@@ -119,6 +126,7 @@ const techLogos = [
                 consulting="Afry"
                 date="2024–2026"
                 title="Embedded Software Engineer"
+                name="5G Radio Serdes Verification"
                 roleDesc={AssignmentEricsson.desc}
                 skills={AssignmentEricsson.skill}
                 accent="#03bfb5"
@@ -129,6 +137,7 @@ const techLogos = [
                 consulting="Nexer/Saab"
                 date="2022–2024"
                 title="Embedded Software Engineer"
+                name="Fighter Jet Radar Systems"
                 roleDesc={AssignmentSaab.desc}
                 skills={AssignmentSaab.skill}
                 accent="#03bfb5"
@@ -137,7 +146,8 @@ const techLogos = [
             <AssignmentCard
                 companyName="Ownit"
                 date="2013–2019"
-                title="Network Technician and Enterprise Support"
+                title="Secondline/NOC"
+                name="Network Technician and Enterprise Support"
                 roleDesc={AssignmentOwnit.desc}
                 skills={AssignmentOwnit.skill}
                 accent="#03bfb5"

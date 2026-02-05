@@ -29,7 +29,14 @@
 }
 .assignmentCardTitle{
     margin-top: 10px;
+    font-size: 1rem; /* min, fluid, max */
+    color: white;
+}
+
+.assignmentCardName{
+    margin-top: 10px;
     font-size: clamp(1.2rem, 3vw, 1.5rem); /* min, fluid, max */
+    color: white;
 }
 
 .assignmentCardVia{

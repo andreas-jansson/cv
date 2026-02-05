@@ -5,6 +5,7 @@ const AssignmentCard = ({
                             companyName = "Company",
                             date = "YYYY–YYYY",
                             title = "Role / Assignment",
+                            name="",
                             consulting = "",
                             roleDesc = [],
                             skills = [],
@@ -131,6 +132,8 @@ const AssignmentCard = ({
                                 <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>{date}</span>
                             </div>
                             <div className="assignmentCardTitle">{title}</div>
+                            <div className="assignmentCardName">{name}</div>
+
                         </div>
                     </div>
 

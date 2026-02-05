@@ -25,10 +25,18 @@ h1{
   font-weight: 700;
   font-style: normal;
   font-size: clamp(2rem, 3vw + 1rem, 4rem); /* min, fluid, max */
-  color: #ececec;
+  color: #ffffff;
   align-self: center;
   vertical-align: center;
   text-align: center;
+}
+
+.blurTextH1Name{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(2rem, 3vw + 1rem, 4rem); /* min, fluid, max */
+  color: #ffffff;
 }
 
 h2{
@@ -267,4 +275,9 @@ h2 span{
 .copyToast.show{
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+.gooey-nav-action{
+  background: none;
+  border: none;
 }
