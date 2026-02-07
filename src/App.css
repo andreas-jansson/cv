@@ -44,6 +44,7 @@ h2{
   font-weight: 700;
   font-style: normal;
   font-size: clamp(1.5rem, 3vw, 3rem); /* min, fluid, max */
+  color:white;
 }
 
 h2 span{
