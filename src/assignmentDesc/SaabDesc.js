@@ -21,10 +21,10 @@ const AssignmentSaab = {
     desc: [
         assignmentSaabItem1,
         assignmentSaabItem2,
-        assignmentSaabItem3,
-        assignmentSaabItem4,
-        assignmentSaabItem5,
-        assignmentSaabItem6,
+        //assignmentSaabItem3,
+        //assignmentSaabItem4,
+        //assignmentSaabItem5,
+        //assignmentSaabItem6,
     ],
     skill: assignmentSaabSkill,
 };
